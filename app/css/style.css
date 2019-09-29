@@ -1,3 +1,33 @@
-body {
-  padding: 0;
-  margin: 0; }
+.flex {
+  display: flex; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.main-content {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto; }
+
+.header-block {
+  padding-top: 60px;
+  width: 100%; }
+  .header-block-img {
+    background-image: url("../images/lector-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 50%;
+    margin-right: 70px;
+    padding-left: 45px;
+    width: 100%; }
+  .header-block-info {
+    max-width: 560px;
+    width: 100%; }
+  .header-block-title-img-box {
+    max-width: 128px;
+    width: 100%; }
+    .header-block-title-img-box img {
+      width: 100%; }
