@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700&display=swap');
+
+@import "mixin.scss";
 
 .flex {
-    display:  flex;
+    display: flex;
 }
 
 .hide {
@@ -11,36 +14,284 @@
     display: block;
 }
 
+.clearfix { clear: both; }
 
 .main-content {
-    max-width: 1440px;
+    max-width: 1240px;
     width: 100%;
     margin: 0 auto;
 }
 
 .header-block {
-    padding-top: 60px;
+    padding-top: 20px;
     width: 100%;
+    justify-content: space-between;
+
     &-img {
         background-image: url('../images/lector-bg.png');
         background-repeat: no-repeat;
-        background-position: center;
-        max-width: 50%;
-        margin-right: 70px;
-        padding-left: 45px;
+        background-position: 0px 140px;
+        background-size: contain;
+        width: 100%;
+        max-width: 612px;
         width: 100%;
     }
 
-    &-info {
-        max-width: 560px;
+    &-img-box {
+        max-width: 506px;
         width: 100%;
-    }
 
-    &-title-img-box {
-        max-width: 128px;
-        width: 100%;
         img {
             width: 100%;
         }
     }
+
+
+    &-info {
+        max-width: 560px;
+        width: 100%;
+        margin-top: 71px;
+    }
+
+    &-title-img-box {
+        max-width: 99px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-title {
+        margin-bottom: 46px;
+
+        p {
+            @include fontStyle(34px, uppercase, #000, $fontC, 400);
+            margin-left: 15px;
+
+            span {
+                @include fontStyle(24px, uppercase, #f69126, $font, 400);
+            }
+        }
+    }
+
+    &-text-title {
+        @include fontStyle(20px, initial, #000, $font, 400);
+        margin-bottom: 15px;
+    }
+
+    &-text-info {
+        @include fontStyle(20px, initial, #000, $font, 400);
+        margin-bottom: 10px;
+
+        span {
+            @include fontStyle(18px, uppercase, #009eb3, $font, 600);
+        }
+    }
+
+    &-descr {
+        margin-bottom: 75px;
+    }
+
+    &-new-prof {
+        margin-bottom: 75px;
+        position: relative;
+
+        p {
+            @include fontStyle(20px, uppercase, #009eb3, $font, 600);
+
+            span {
+                margin-top: 5px;
+                display: inline-block;
+                @include fontStyle(18px, initial, #000, $font, 400);
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 141px;
+            height: 17px;
+            display: block;
+            background-image: url('../images/wave.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            top: -47px;
+        }
+
+        &::after {
+            content: '';
+            width: 141px;
+            height: 17px;
+            display: block;
+            background-image: url('../images/wave.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            bottom: -47px;
+        }
+    }
+
+    &-start {
+        p {
+            margin-bottom: 46px;
+            @include fontStyle(20px, initial, #000, $font, 900);
+
+            span {
+                @include fontStyle(20px, initial, #009eb3, $font, 600);
+            }
+        }
+
+        button {
+            @include buttons (280px, #fff, #009eb3, $font);
+            padding: 14px 0;
+            margin-bottom: 19px;
+        }
+
+        &-btn-block {
+            display: inline-block;
+            text-align: center;
+            span {
+                @include fontStyle(20px, initial, #f69126, $font, 400);
+            }
+        }
+    }
+}
+
+.numb {
+    justify-content: space-around;
+    margin-top: 62px;
+    text-align: center;
+    &-title {
+        @include fontStyle(55px, initial, #f69126, $fontCB, 900);
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        @include fontStyle(15px, initial, #000, $font, 400);
+    }
+}
+
+.video-block {
+    margin-top: 130px;
+    &-img  { 
+        max-width: 134px;
+        width: 100%;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-text {
+        max-width: 500px;
+        width: 100%;
+        margin-right: 44px;
+    }
+
+    &-descr {
+        p {
+            @include fontStyle(23px, initial, #000, $font, 400);
+            line-height: 26px;
+            span {
+                display: block;
+                text-align: right;
+                @include fontStyle(20px, initial, #f69126, $font, 400);
+                margin-top: 10px;
+            }
+        }
+
+        button {
+            @include buttons (280px, #fff, #f69126, $font);
+            padding: 14px 0;
+            margin-top: 45px;
+        }
+    }
+
+    &-youtube {
+        background-image: url('../images/bg-video.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        padding: 54px 0;
+    }
+
+    .youtube {
+        width: 500px;
+        height: 360px;
+        background: #cccccc;
+    }
+}
+
+.shcool-start {
+    margin-top: 116px;
+    justify-content: space-between;
+    &-left {
+        max-width: 513px;
+        width: 100%;
+        padding: 170px 30px;
+        align-items: center;
+        position: relative;
+        p {
+            @include fontStyle(39px, uppercase, #000, $fontCB, 600);
+            line-height: 49px;
+            span {
+                display: block;
+                color: $main;
+            }
+        }
+        &::after,
+        &::before {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 513px;
+            height: 103px;
+            top: 30px;
+            left: 0;
+            background-image: url('../images/wave-sc.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            top: initial;
+            bottom: 0;
+        }
+
+    }
+
+    &-right {
+        max-width: 540px;
+        width: 100%;
+        p {
+            @include fontStyle(18px, initial, #000, $font, 400);
+            line-height: 27px;
+            &:last-child {
+                
+            }
+        }
+        img{
+            max-width: 66px;
+            width: 100%;
+            float: left;
+            padding: 0 10px 8px 0
+
+        }
+    }
+    &-descr-1 {
+        p {
+            padding-top: 78px;
+        }
+    }
+    &-descr-2 {
+        margin-top: 56px;
+        p {
+            padding-top: 56px;
+        }
+    }
+
 }

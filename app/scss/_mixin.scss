@@ -1,0 +1,38 @@
+
+$font: 'Fira Sans', sans-serif;
+$fontC: 'century', sans-serif;
+$fontCB: 'centuryB', sans-serif;
+
+$main: #009eb3;
+$sub: #f69126;
+
+@font-face {
+    font-family: 'century';
+    src: url('../fonts/century.ttf') ,  
+  }
+@font-face {
+    font-family: 'centuryB';
+    src: url('../fonts/centuryB.ttf') ,  
+  }
+
+
+@mixin fontStyle($fz, $tt, $color, $fontF, $fontW) {
+    font-size: $fz;
+    text-transform: $tt;
+    color: $color;
+    font-family: $fontF;
+    font-weight: $fontW;
+  }
+
+
+  @mixin buttons($wd,  $color, $bg, $fontW) {
+    display: block;
+    width: $wd; 
+    text-transform: uppercase;
+    font-size: 18px;
+    color: $color;
+    background:  $bg;
+    font-family:  $fontW;
+    border-radius: 30px;
+    border: none;
+  }
