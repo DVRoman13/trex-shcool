@@ -285,3 +285,47 @@
     margin-top: 56px; }
     .shcool-start-descr-2 p {
       padding-top: 56px; }
+
+.work {
+  justify-content: space-between;
+  margin: 55px 0; }
+  .work-img-block {
+    max-width: 242px;
+    width: 100%; }
+    .work-img-block img {
+      width: 100%; }
+  .work-items {
+    max-width: 282px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center; }
+  .work-title {
+    font-size: 20px;
+    text-transform: initial;
+    color: #009eb3;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px; }
+  .work-salery {
+    font-size: 18px;
+    text-transform: initial;
+    color: #000;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    margin-bottom: 10px; }
+  .work-place {
+    font-size: 15px;
+    text-transform: initial;
+    color: #000;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  .work-text {
+    font-size: 17px;
+    text-transform: initial;
+    color: #000;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; }

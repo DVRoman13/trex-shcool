@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700&display=swap');
 
 @import "mixin.scss";
+ 
 
 .flex {
     display: flex;
@@ -270,9 +271,6 @@
         p {
             @include fontStyle(18px, initial, #000, $font, 400);
             line-height: 27px;
-            &:last-child {
-                
-            }
         }
         img{
             max-width: 66px;
@@ -294,4 +292,45 @@
         }
     }
 
+}
+
+.work {
+    justify-content: space-between;
+    margin: 55px 0;
+    &-img-block {
+        max-width: 242px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-items {
+        max-width: 282px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-title {
+        @include fontStyle(20px, initial, $main, $font, 600);
+        letter-spacing: 0.15em;
+        margin-bottom: 10px;
+    }
+
+    &-salery {
+        @include fontStyle(18px, initial, #000, $font, 900);
+        letter-spacing: 0.15em;
+        margin-bottom: 10px;
+    }
+
+    &-place {
+        @include fontStyle(15px, initial, #000, $font, 400);
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        @include fontStyle(17px, initial, #000, $font, 400);
+    }
 }
