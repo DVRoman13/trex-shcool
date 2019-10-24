@@ -71,7 +71,7 @@
             margin-left: 15px;
 
             span {
-                @include fontStyle(24px, uppercase, #f69126, $font, 400);
+                @include fontStyle(24px, uppercase, $sub, $font, 400);
             }
         }
     }
@@ -86,7 +86,7 @@
         margin-bottom: 10px;
 
         span {
-            @include fontStyle(18px, uppercase, #009eb3, $font, 600);
+            @include fontStyle(18px, uppercase, $main, $font, 600);
         }
     }
 
@@ -99,7 +99,7 @@
         position: relative;
 
         p {
-            @include fontStyle(20px, uppercase, #009eb3, $font, 600);
+            @include fontStyle(20px, uppercase, $main, $font, 600);
 
             span {
                 margin-top: 5px;
@@ -141,13 +141,12 @@
             @include fontStyle(20px, initial, #000, $font, 900);
 
             span {
-                @include fontStyle(20px, initial, #009eb3, $font, 600);
+                @include fontStyle(20px, initial, $main, $font, 600);
             }
         }
 
         button {
-            @include buttons (280px, #fff, #009eb3, $font);
-            padding: 14px 0;
+            @include buttons (280px, #fff, $main, $font);
             margin-bottom: 19px;
         }
 
@@ -155,7 +154,7 @@
             display: inline-block;
             text-align: center;
             span {
-                @include fontStyle(20px, initial, #f69126, $font, 400);
+                @include fontStyle(20px, initial, $sub, $font, 400);
             }
         }
     }
@@ -166,7 +165,7 @@
     margin-top: 62px;
     text-align: center;
     &-title {
-        @include fontStyle(55px, initial, #f69126, $fontCB, 900);
+        @include fontStyle(55px, initial, $sub, $fontCB, 900);
         margin-bottom: 10px;
     }
 
@@ -199,14 +198,13 @@
             span {
                 display: block;
                 text-align: right;
-                @include fontStyle(20px, initial, #f69126, $font, 400);
+                @include fontStyle(20px, initial, $sub, $font, 400);
                 margin-top: 10px;
             }
         }
 
         button {
-            @include buttons (280px, #fff, #f69126, $font);
-            padding: 14px 0;
+            @include buttons (280px, #fff, $sub, $font);
             margin-top: 45px;
         }
     }
@@ -236,7 +234,7 @@
         align-items: center;
         position: relative;
         p {
-            @include fontStyle(39px, uppercase, #000, $fontCB, 600);
+            @include fontStyle(38px, uppercase, #000, $fontCB, 600);
             line-height: 49px;
             span {
                 display: block;
@@ -332,5 +330,310 @@
 
     &-text {
         @include fontStyle(17px, initial, #000, $font, 400);
+    }
+}
+
+.experience-block {
+    justify-content: space-between;
+
+    &-text {
+        align-items: center;
+    }
+    &-descr {
+        max-width: 342px;
+        width: 100%;
+        p {
+            @include fontStyle(30px, initial, #000, $font, 500);
+            line-height: 50px;
+            span {
+                @include fontStyle(50px, initial, $main, $font, 700);
+                display: block;
+                &:last-child {
+                    @include fontStyle(35px, initial, $sub, $font, 700);
+                }
+            }
+        }
+    }
+
+    &-img {
+        max-width: 847px;
+        width: 100%;
+        background-image: url('../images/bg-video.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.result {
+    justify-content: space-between;
+    margin: 61px 0;
+
+    &-img-btn {
+        max-width: 690px;
+        width: 100%;
+        background-image: url('../images/lector-bg.png');
+        background-repeat: no-repeat;
+        background-position: top left;
+        padding-top: 110px;
+        padding-left: 95px;
+        button {
+            @include buttons (280px, #fff, $main, $font);
+        }
+    }
+
+    &-img-block {
+        max-width: 630px;
+        width: 100%;
+        margin-bottom: 50px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-descr {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &-descr-title {
+        margin-bottom: 50px;
+        p {
+            margin-left: 15px;
+            @include fontStyle(32px, initial, #000, $font, 400);
+            max-width: 185px;
+            width: 100%;
+        }
+    }
+
+    &-descr-text-title {
+        @include fontStyle(20px, initial, $main, $fontCB, 700);
+        margin-bottom: 15px;
+        &:nth-child(2) {
+            margin-bottom: 75px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 141px;
+                height: 17px;
+                display: block;
+                background-image: url('../images/wave.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                bottom: -45.5px;
+            }
+        }
+        &:nth-child(5) {
+            margin: 75px 0;
+            position: relative;
+            &::before {
+                content: '';
+                width: 141px;
+                height: 17px;
+                display: block;
+                background-image: url('../images/wave.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: -45.5px;
+            }
+    
+            &::after {
+                content: '';
+                width: 141px;
+                height: 17px;
+                display: block;
+                background-image: url('../images/wave.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                bottom: -45.5px;
+            }
+        }
+    }
+
+    &-descr-text {
+        @include fontStyle(18px, initial, #000, $font, 400);
+    }
+}
+
+.program {
+    text-align: center;
+    &-title {
+        justify-content: center; 
+        align-items: flex-end;
+        margin-bottom: 50px;
+        p {
+            max-width: 264px;
+            width: 100%;
+            @include fontStyle(38px, initial, #000, $font, 500);
+            text-align: left;
+        }
+    }
+
+    &-title-img {
+        max-width: 84px;
+        width: 100%;
+        margin-right: 15px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-tabs-links {
+        margin-left: 204px;
+        padding-bottom: 36px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #ccc;
+        ul {
+            justify-content: space-between;
+        }
+        &-items {
+            text-align: left;
+            @include fontStyle(20px, initial, rgba(102, 102, 102, 255), $fontC, 500);
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            
+        }
+    }
+
+    .active-tab {
+        color: $main;
+        font-weight: 900;
+        position: relative;
+        &::after {
+            display: block;
+            position: absolute;
+            bottom: -38px;
+            left: 0;
+            content: '';
+            width: 317px;
+            height: 5px;
+            background-color:  $main;;
+        }
+    }
+
+    &-lessons {
+        max-width: 167px;
+        width: 100%;
+        text-align: left;
+        border-right: 1px solid #ccc;
+        margin-right: 157px;
+    }
+
+    &-lesson-item {
+        margin-bottom: 50px;
+        letter-spacing: 1px;
+        @include fontStyle(20px, initial, rgba(102, 102, 102, 255), $fontC, 500);
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .active-lesson-item {
+        color: $sub;
+        font-weight: 900;
+        position: relative;
+        &::after {
+            display: block;
+            position: absolute;
+            top: -12px;
+            right: -2px;
+            content: '';
+            width: 5px;
+            height: 50px;
+            background-color:  $sub;
+        }
+    }
+
+    &-lessons-descr {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        text-align: left;
+    }
+
+    &-lessons-descr-items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        li {
+            @include fontStyle(18px, initial, rgba(3, 51, 51, 255), $font, 400);
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.price {
+    margin-top: 90px;
+    margin-bottom: 0px;
+
+    &-items-box {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    &-item {
+        text-align: center;
+        max-width: 294px;
+        width: 100%;
+        p {
+            @include fontStyle(20px, initial, #000, $font, 500);
+            line-height: 27px;
+            text-align: center;
+            margin-bottom: 10px;
+            &:last-of-type {
+                color: $sub;
+                font-weight: 700;
+                margin-bottom: 25px;
+                font-size: 22px;
+            }
+        }
+
+        &:last-child {
+            margin-top: 50px;
+            max-width: 100%;
+            text-align: center;
+            p {
+                font-size: 24px;
+                &:last-of-type {
+                    color: $main;
+                    font-weight: 700;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        button {
+            @include buttons (280px, #fff, $main, $font);
+            margin: 0 auto;
+        }
+    }
+}
+
+.partial-payment {
+    justify-content: space-between;
+    margin-top: 100px;
+
+    .info-pay {
+        max-width: 271px;
+        width: 100%;
+        @include fontStyle(14px, initial, $sub, $font, 400);
+        text-align: center;
+        margin-top: 20px;
+        line-height: 18px;
     }
 }
