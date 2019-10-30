@@ -1,3 +1,4 @@
+
 let lessonTabs = document.querySelectorAll('.program-lesson-item');
 let coursInfo = document.querySelectorAll('.program-tabs-links-items');
 let lessonsStart = document.querySelectorAll('.lessons-start');

@@ -1,7 +1,8 @@
 var gulp   = require("gulp"),
 	sass        = require('gulp-sass'),
 	browserSync = require('browser-sync');
-
+	swiper = require('swiper');
+	
 gulp.task('sass', function(){
 	return gulp.src('app/scss/style.scss')
 	.pipe(sass())
