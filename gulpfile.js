@@ -1,30 +1,21 @@
-var gulp   = require("gulp"),
-	sass        = require('gulp-sass'),
-	browserSync = require('browser-sync');
-	swiper = require('swiper');
-	
-gulp.task('sass', function(){
-	return gulp.src('app/scss/style.scss')
-	.pipe(sass())
-	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.reload({stream:true}))
+var gulp = require("gulp");
+var scss = require("gulp-sass");
+var browserSync = require("browser-sync");
+
+gulp.task('compile', function(){
+  return gulp.src("app/scss/**/*.scss")
+    .pipe(scss())
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.stream());
 });
 
-gulp.task('browser-sync', function(){
-	browserSync({
-		server: {
-			baseDir: 'app'
-		},
-		notife: false
+gulp.task("watch", function(done) {
+  browserSync.init({
+    server:'app/'
+  })
 
-	});
+  gulp.watch("app/scss/**/*.scss", gulp.series('compile'));
+  gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-
-
-gulp.task('watch', ['browser-sync', 'sass'], function() {
-	gulp.watch('app/scss/style.scss', ['sass']);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/*.css', browserSync.reload);
-	gulp.watch('app/js/**/*.js', browserSync.reload);
-});
+gulp.task('default', gulp.series('compile', 'watch'));
