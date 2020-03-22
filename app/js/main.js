@@ -64,3 +64,4 @@ function startFromZero(tabs, className, isLessons=false) {
         countTabs= 0
     }
 }
+

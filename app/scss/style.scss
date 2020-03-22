@@ -17,7 +17,7 @@
 .clearfix { clear: both; }
 
 .main-content {
-    max-width: 1240px;
+    max-width: 1360px;
     width: 100%;
     margin: 0 auto;
 }
@@ -460,6 +460,7 @@
 
     &-descr-text {
         @include fontStyle(18px, initial, #000, $font, 400);
+        line-height: 1.3;
     }
 }
 
@@ -576,7 +577,7 @@
 
 .price {
     margin-top: 90px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     &-items-box {
         flex-wrap: wrap;
@@ -611,7 +612,7 @@
                 &:last-of-type {
                     color: $main;
                     font-weight: 700;
-                    margin-bottom: 25px;
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -636,4 +637,147 @@
         line-height: 18px;
         
     }
+}
+
+.gallary {
+    margin-top: 90px;
+}
+.gallary-box {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    img {
+        margin-bottom: 25px;
+    }
+}
+
+
+.lector-wrap {
+    margin-top: 90px;
+    &-inner {
+        justify-content: space-around;
+    }
+}
+.lector-info-title {
+    justify-content: flex-start;
+    margin-bottom: 55px;
+    p {
+        font-size: 30px;
+        font-family: "Fira Sans", sans-serif;
+        span {
+            color: #f69126;
+            font-weight: 600;
+        }
+    }
+}
+
+.lectior-deskr {
+    p {
+        max-width: 526px;
+        width: 100%;
+        @include fontStyle(20px, initial, #000, $font, 400);
+        line-height: 1.6;
+        span {
+            display: block;
+            @include fontStyle(25px, initial, $main, $font, 600);
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.lector-img {
+    text-align: right;
+    img {
+        width: 80%;
+    }
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 50px 0;
+    background: #333333;
+    justify-content: space-around;
+
+}
+
+.logo {
+    margin-top: 40px;
+    p {
+        @include fontStyle(20px, initial, #fff, $font, 400);
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+}
+
+.form {
+    text-align: center;
+    p {
+        @include fontStyle(20px, uppercase, $main, $font, 600);
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+    label {
+        display: block;
+        margin-bottom: 20px;
+        width: 318px;
+        input {
+            width: 100%;
+            height: 32px;
+        }
+    }
+
+    button {
+        text-align: center;
+        display: inline-block;
+        margin: 20px auto 0;
+        text-align: center;
+        @include buttons(238px,  #fff, $sub, 400);
+    }
+}
+
+.contacts {
+    margin-top: 40px;
+
+    p {
+        @include fontStyle(16px, initial, #fff, $font, 400);
+        line-height: 1.5;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            content: '';
+            background: url("../images/place.png");
+            background-size: cover;
+            left: -45px;
+        }
+    }
+
+    .phone-cont {
+        &:before {
+            background: url("../images/phone.png");
+            position: absolute;
+            width: 35px;
+            height: 35px;
+            content: '';
+            background-size: cover;
+            left: -45px
+        }
+    }
+}
+
+.economy {
+    @include fontStyle(20px, initial, $sub, $font, 400);
+    display: block;
+    margin-bottom: 10px;
+    span {
+        font-weight: 600;
+    }
+}
+
+.economy + button {
+    background: $sub;
 }
