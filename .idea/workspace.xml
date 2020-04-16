@@ -2,25 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00d1d5b4-5aa9-49d1-ba87-01a1d609a541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/2c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/gallery/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/lector-block-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/lector-custom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/lector-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/logo-footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/images/place.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/rev-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/rev-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/rev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev-user9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/reviews/rev9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trex-shcool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trex-shcool.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/_mixin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_mixin.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,13 +52,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XMQ8V7jSRg0v38pKR6l6PNlvhy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.jest.jest_package" value="" />
@@ -61,11 +78,44 @@
       <option name="presentableId" value="Default" />
       <updated>1584878359128</updated>
       <workItem from="1584878360611" duration="2177000" />
-      <workItem from="1584883415648" duration="6978000" />
+      <workItem from="1584883415648" duration="7689000" />
+      <workItem from="1585344286810" duration="2920000" />
+      <workItem from="1585585136217" duration="6459000" />
+      <workItem from="1585986578403" duration="466000" />
+      <workItem from="1585987079452" duration="7096000" />
+      <workItem from="1586085936560" duration="13000" />
+      <workItem from="1586290447911" duration="6180000" />
+      <workItem from="1587065378738" duration="2006000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586032493558">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1586032493558" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585349461670" />
+    <state x="427" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585987339018">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="427" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1585987339018" />
+    <state x="720" y="0" width="720" height="900" key="dock-window-1" timestamp="1585986865466">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="-960" y="23" width="960" height="1057" key="dock-window-1/0.0.1440.828/-1920.23.1920.1057@0.0.1440.828" timestamp="1585591634457" />
+    <state x="-960" y="23" width="960" height="1057" key="dock-window-1/0.0.1440.830/-1920.23.1920.1057@0.0.1440.830" timestamp="1585641754004" />
+    <state x="720" y="0" width="720" height="900" key="dock-window-1/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1585986865466" />
+    <state x="-960" y="23" width="960" height="1057" key="dock-window-1/0.23.1440.805/-1920.23.1920.1057@0.23.1440.805" timestamp="1585635823222" />
+    <state x="480" y="23" width="960" height="805" key="dock-window-1/0.23.1440.805@0.23.1440.805" timestamp="1585637360832" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1585590496897">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1585590496897" />
   </component>
 </project>

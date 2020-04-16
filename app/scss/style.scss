@@ -524,8 +524,10 @@
         max-width: 167px;
         width: 100%;
         text-align: left;
-        border-right: 1px solid #ccc;
         margin-right: 157px;
+        ul  {
+            border-right: 1px solid #ccc;
+        }
     }
 
     &-lesson-item {
@@ -780,4 +782,107 @@
 
 .economy + button {
     background: $sub;
+}
+
+.questions {
+    max-width: 90%;
+    margin: 0 auto;
+    .shcool-start-left p span {
+        display: inline;
+        color: #009eb3;
+    }
+
+    .shcool-start-descr-2 p,
+    .shcool-start-descr-1 p {
+        padding-top: 20px;
+    }
+
+    p.questions-title {
+        @include fontStyle(23px, initial, $main, $font, 600);
+    }
+}
+
+.payback {
+    position: relative;
+    padding-top: 130px;
+    &::after {
+        background-image: url('../images/bg-video.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 555px;
+        height: 468px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        z-index: -1;
+    }
+    &-inner {
+        justify-content: space-between;
+    }
+    .payback-question {
+        &-title {
+            @include fontStyle(43px, initial, #333333, $font, 600);
+            max-width: 577px;
+            width: 100%;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            line-height: 1.3;
+        }
+
+        &-text {
+            @include fontStyle(18px, initial, #033333, $font, 400);
+            max-width: 559px;
+            width: 100%;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+
+        button {
+            @include buttons (280px, #fff, $sub, $font);
+            margin-top: 45px;
+        }
+    }
+}
+
+.reviews {
+    margin: 30px 0 0;
+    padding: 85px 123px 0 50px;
+    position: relative;
+    background-image: url('../images/rev-bg.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    .program-title {
+        position: absolute;
+        right: 100px;
+        top: 62px;
+        justify-content: flex-end;
+        font-family: $fontC;
+
+    }
+
+    .slide-wrapp {
+        justify-content: space-between;
+    }
+
+    .rev-img {
+        max-width: 457px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    .user-img-blok {
+        text-align: center;
+        img {
+            width: 240px;
+        }
+        p {
+            @include fontStyle(20px, initial, $main, $fontC, 400);
+            letter-spacing: 2px;
+        };
+    }
 }
