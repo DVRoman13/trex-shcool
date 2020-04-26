@@ -1,0 +1,261 @@
+
+@media only screen and (max-width: 1024px) {
+  .main-content {
+    width: 90%;
+  }
+
+  .header-block {
+    &-img {
+      max-width: 420px;
+      display: none;
+    }
+
+    &-info {
+      max-width: 90%;
+      width: 100%;
+      margin:  0 auto;
+      text-align: center;
+    }
+
+    &-title-img-box {
+      max-width: 50px;
+      width: 100%;
+      display: none;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+      text-align: center;
+      p {
+        font-size: 18px;
+        margin: 0 auto;
+        line-height: 1.6;
+
+        span {
+          @include fontStyle(24px, uppercase, $sub, $font, 400);
+        }
+      }
+    }
+
+    &-descr {
+      margin-bottom: 40px;
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &-new-prof {
+      margin-bottom: 40px;
+      position: relative;
+
+      p {
+        @include fontStyle(20px, uppercase, $main, $font, 600);
+
+        span {
+          margin-top: 5px;
+          display: inline-block;
+          @include fontStyle(18px, initial, #000, $font, 400);
+        }
+      }
+
+      &::before {
+        left: 50%;
+        top: -25px;
+        transform: translate(-50%);
+      }
+
+      &::after {
+        left: 50%;
+        bottom: -25px;
+        transform: translate(-50%);
+      }
+    }
+  }
+
+  .numb {
+    &-title {
+      font-size: 30px;
+    }
+
+    &-text {
+      font-size: 14px;
+    }
+  }
+
+  .video-block {
+    margin-top: 70px;
+    flex-direction: column;
+    &-img  {
+      display: none;
+    }
+
+    &-text {
+      max-width: 90%;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &-descr {
+      margin-bottom: 30px;
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
+      button {
+        margin: 35px auto 0 !important;
+      }
+    }
+
+    &-youtube {
+      background-image: none;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      padding: 24px 0;
+    }
+
+    .youtube {
+      margin: 0 auto;
+    }
+  }
+
+  .shcool-start {
+    margin-top: 20px;
+    flex-direction: column;
+    &-left {
+      max-width: 100%;
+      margin: 0 auto;
+      p {
+        ont-size: 32px;
+        text-align: center;
+        span {
+          display: inline;
+        }
+      }
+      &::after,
+      &::before {
+        width: 400px;
+        background-size: contain;
+        transform: translate(-50%);
+        left: 50%;
+        top: 50px
+      }
+
+      &::after {
+        top: initial;
+        bottom: 50px;
+      }
+
+    }
+
+    &-right {
+      max-width: 540px;
+      width: 100%;
+      margin: 0 auto;
+      p {
+        font-size: 15px;
+      }
+      img{
+        max-width: 35px;
+        width: 100%;
+        float: left;
+        padding: 0
+
+      }
+    }
+    &-descr-1 {
+      p {
+        padding-top: 40px;
+      }
+    }
+    &-descr-2 {
+      margin-top: 36px;
+      p {
+        padding-top: 19px;
+      }
+    }
+
+  }
+
+  .work {
+    margin: 45px auto;
+    flex-wrap: wrap;
+    max-width: 90%;
+    &-img-block {
+      max-width: 300px;
+      margin: 20px 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-items {
+      max-width: 282px;
+      width: 100%;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-title {
+      @include fontStyle(20px, initial, $main, $font, 600);
+      letter-spacing: 0.15em;
+      margin-bottom: 10px;
+    }
+
+    &-salery {
+      @include fontStyle(18px, initial, #000, $font, 900);
+      letter-spacing: 0.15em;
+      margin-bottom: 10px;
+    }
+
+    &-place {
+      @include fontStyle(15px, initial, #000, $font, 400);
+      margin-bottom: 10px;
+    }
+
+    &-text {
+      @include fontStyle(17px, initial, #000, $font, 400);
+    }
+  }
+
+  experience-block {
+    justify-content: space-between;
+
+    &-text {
+      align-items: center;
+    }
+    &-descr {
+      max-width: 342px;
+      width: 100%;
+      p {
+        @include fontStyle(30px, initial, #000, $font, 500);
+        line-height: 50px;
+        span {
+          @include fontStyle(50px, initial, $main, $font, 700);
+          display: block;
+          &:last-child {
+            @include fontStyle(35px, initial, $sub, $font, 700);
+          }
+        }
+      }
+    }
+
+    &-img {
+      max-width: 847px;
+      width: 100%;
+      background-image: url('../images/bg-video.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

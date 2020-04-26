@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
 </head>
 
 <body>
@@ -44,9 +46,9 @@
                     </p>
                 </div>
                 <div class="header-block-start">
-                    <p>Старт курсов в Киеве - <span>28 октября 2019 </span></p>
+                    <p>Старт курсов ONLINE - <span>11 мая 2020 </span></p>
                     <div class="header-block-start-btn-block">
-                        <button>ЗАПИСАТЬСЯ НА КУРС</button>
+                        <button class="form-open">ЗАПИСАТЬСЯ НА КУРС</button>
                         <span>652 довольных студента</span>
                     </div>
                 </div>
@@ -84,12 +86,12 @@
                         мои курсы.
                         <span>Екатерина Дунаева</span>
                     </p>
-                    <button>ЗАПИСАТЬСЯ НА КУРС</button>
+                    <button class="form-open">ЗАПИСАТЬСЯ НА КУРС</button>
                 </div>
             </div>
             <div class="video-block-youtube">
                 <div class="youtube">
-
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4yJ60zieLYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -97,7 +99,7 @@
         <div class="shcool-start flex">
             <div class="shcool-start-left flex">
                 <p>
-                    <span> 2 ПРИЧИНЫ, </span>
+                    <span> 2 ПРИЧИНЫ </span>
                     ПО КОТОРЫМ<br>
                     ПОЯВИЛАСь ШКОЛА<br>
                     копирайтинга T-REX
@@ -204,7 +206,7 @@
                 <div class="result-img-block">
                     <img src="images/result.jpeg" alt="">
                 </div>
-                <button>ПОЛУЧИТЬ РЕЗУЛЬТАТ</button>
+                <button class="form-open">ПОЛУЧИТЬ РЕЗУЛЬТАТ</button>
             </div>
             <div class="result-descr">
                 <div class="result-descr-title flex">
@@ -469,27 +471,27 @@
                         для начинающих»
                     </p>
                     <p class="price-item-price"> 3950 грн</p>
-                    <button>купить курс</button>
+                    <button class="form-open">купить курс</button>
                 </div>
                 <div class="price-item">
                     <p>КУРС «Копирайтинг. <br>
                         Средний уровень»
                     </p>
                     <p class="price-item-price"> 4950 грн</p>
-                    <button>купить курс</button>
+                    <button class="form-open">купить курс</button>
                 </div>
                 <div class="price-item">
                     <p> КУРС «Копирайтинг. <br>Професиональный уровнь»
                     </p>
                     <p class="price-item-price"> 3300 грн</p>
-                    <button>купить курс</button>
+                    <button class="form-open">купить курс</button>
                 </div>
                 <div class="price-item">
                     <p>ПРИ ПОКУПКЕ 3-х курсов сразу<br> общая стоимость
                     </p>
                     <p class="price-item-price">9900 грн</p>
                     <span class="economy">экономия <span>2300 грн</span></span>
-                    <button>купить три курса</button>
+                    <button class="form-open">купить три курса</button>
                 </div>
             </div>
         </div>
@@ -514,7 +516,7 @@
 
                         <span>Екатерина Дунаева</span>
                     </p>
-                    <button>Оплата частями</button>
+                    <button class="form-open">Оплата частями</button>
                     <p class="info-pay">
                         Оплата частями возможна
                         при покупки 3-х курсов одновременно.
@@ -533,7 +535,7 @@
                          Вот пример, как одна из наших студенток воспользовалась знаниям
                     </p>
                     <div class="payback-question-btn">
-                        <button>Принять участие</button>
+                        <button class="form-open">Принять участие</button>
                     </div>
                 </div>
                 <div class="payback-img-wrap">
@@ -550,7 +552,7 @@
                         <img src="images/rev-title.png" alt="">
                     </div>
                     <p>
-                        ОТЗЫВЫ УЧАСТНИКОВ
+                        ОТЗЫВЫ УЧАСТНИКОВ О КУРСАХ И ЛЕКЦИЯХ
                     </p>
                 </div>
             <div class="reviews-inner">
@@ -644,7 +646,7 @@
                             Однозначно без грамотности освоить любой из курсов будет не легко, но возможно. Пройдя всю
                             программу, даже студенты с низким уровнем базовых знаний смогут стать настоящими
                             профессионалами. Однако для этого прийдется изрядно потрудиться. Осваивать знания сложно, но
-                            очень интересно и увлекательно.InfoWrappContainer
+                            очень интересно и увлекательно.
                         </p>
                     </div>
                 </div>
@@ -679,12 +681,39 @@
                 <p class="phone-cont">+380953102195</p>
             </div>
         </div>
+        <div class="form-holder mfp-hide">
+            <form class="form-popup" id="form-action">
+                <p>Заполните форму  для участия</p>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Курсы Копирайтинг new site">
+                <input type="hidden" name="admin_email" value="ekaterinadunaeva1@gmail.com">
+                <input type="hidden" name="form_subject" value="заявка с формы Копирайтинга">
+                <!-- END Hidden Required Fields -->
+                <div class="input-holder">
+                    <input type="text" class="inputs-obj" name="Name" placeholder="Ваше имя" data-error="Поле должно содержать от 2 до 32 символов" data-type="text">
+                    <span class="error-valid">Поле обязательное для заполнения</span>
+                </div>
+
+                <div class="input-holder">
+                    <input type="text"  class="inputs-obj" id="input-phone" name="Phone" placeholder="Ваш телефон..."  data-type="phone"  data-error="Некоректный номер телефона" >
+                    <span class="error-valid">Поле обязательное для заполнения</span>
+                </div>
+
+                <div class="input-holder">
+                    <input type="email" class="inputs-obj"  name="E-mail" placeholder="Ваш E-mail..." data-type="email" data-error="Недопустимый Email">
+                    <span class="error-valid">Поле обязательное для заполнения</span>
+                </div>
+                <button class="btn form_button" id="form_button">Отправить</button>
+                <p class="footer_text_bottom hide">Спасибо, мы скоро свяжемся с Вами ;-)</p>
+            </form>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src='./js/inputmask/jquery.inputmask.min.js'></script>
     <script src='./js/main.js'></script>
 </body>
 

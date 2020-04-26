@@ -25,6 +25,10 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: border-box !important;
+}
+
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;

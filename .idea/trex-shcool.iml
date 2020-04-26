@@ -8,6 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="landingcopiwriter" />
+    <orderEntry type="library" name="jQuery" level="project" />
+    <orderEntry type="library" name="@types/7zip-min" level="application" />
   </component>
 </module>
