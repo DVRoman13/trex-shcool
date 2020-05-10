@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00d1d5b4-5aa9-49d1-ba87-01a1d609a541" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/css/slick-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/js/inputmask/jquery.inputmask.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/scss/_responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/trex-shcool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trex-shcool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/logo-tablet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/tablet-img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_responsive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +28,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/app/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/scss/style.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/scss/_responsive.scss" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/js/main.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectId" id="1XMQ8V7jSRg0v38pKR6l6PNlvhy" />
@@ -45,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -83,7 +82,11 @@
       <workItem from="1587071339608" duration="1224000" />
       <workItem from="1587408131404" duration="7500000" />
       <workItem from="1587670836178" duration="4838000" />
-      <workItem from="1587927987033" duration="524000" />
+      <workItem from="1587927987033" duration="954000" />
+      <workItem from="1588185812883" duration="4578000" />
+      <workItem from="1588707012165" duration="4226000" />
+      <workItem from="1588880664121" duration="3882000" />
+      <workItem from="1589138428180" duration="2075000" />
     </task>
     <task id="LOCAL-00001" summary="add new feature - slider">
       <created>1587069219466</created>
@@ -104,10 +107,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="add new feature - slider" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586032493558">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588188054402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1586032493558" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1588188054402" />
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1585349461670" />
     <state x="427" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585987339018">
       <screen x="0" y="0" width="1440" height="900" />

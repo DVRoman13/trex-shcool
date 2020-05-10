@@ -259,8 +259,9 @@ $(document).ready(function(){
         infinite: true,
         speed: 300,
         slidesToShow: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 5000,
+        adaptiveHeight: true
     });
 });
 
@@ -349,7 +350,6 @@ formBtn.addEventListener('click', function (e) {
 });
 
 let body = document.querySelector('body')
-console.log(body.scrollWidth)
 if(window.innerWidth <=  body.scrollWidth) {
     console.log(12)
     let br = document.querySelectorAll('.shcool-start-left br');
@@ -358,3 +358,16 @@ if(window.innerWidth <=  body.scrollWidth) {
     })
 }
 
+
+if(window.innerWidth <=  414) {
+    delBr(document.querySelectorAll('.header-block-title br'))
+    delBr(document.querySelectorAll('.program-tabs-links-items br'))
+}
+
+
+
+function delBr(arr) {
+    arr.forEach((el)=> {
+        el.classList.add('hide')
+    })
+}
